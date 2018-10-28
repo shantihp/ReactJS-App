@@ -1,0 +1,50 @@
+{
+  "name": "reactjs-demo",
+  "version": "1.0.0",
+  "description": "A small app to demonstrate ReactJS basics",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack -d && copy src\\index.html dist\\index.html && webpack-dev-server --content-base src --inline --hot --history-api-fallback",
+    "build:prod": "webpack -p && cp src/index.html dist/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shantihp/ReactJS-App.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "reactjs",
+    "javascript"
+  ],
+  "author": "Shantinath Chaudhary",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "16.5.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-promise-middleware": "^5.1.1",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-decorators": "^7.0.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
+    "@babel/plugin-proposal-function-sent": "^7.0.0",
+    "@babel/plugin-proposal-json-strings": "^7.0.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.0.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-syntax-import-meta": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  }
+}
